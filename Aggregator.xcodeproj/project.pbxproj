@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBA25CBF38700A611CF /* AppDelegate.swift */; };
 		A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */; };
-		A68F3EBF25CBF38700A611CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBE25CBF38700A611CF /* ViewController.swift */; };
 		A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC025CBF38700A611CF /* Main.storyboard */; };
 		A68F3EC425CBF38800A611CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC325CBF38800A611CF /* Assets.xcassets */; };
 		A68F3EC725CBF38800A611CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC525CBF38800A611CF /* LaunchScreen.storyboard */; };
@@ -17,6 +16,10 @@
 		A68F3EDD25CBF38900A611CF /* AggregatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EDC25CBF38900A611CF /* AggregatorUITests.swift */; };
 		A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EF025CBFAD100A611CF /* LoginViewController.swift */; };
 		A68F3EF325CBFAD100A611CF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EF125CBFAD100A611CF /* LoginViewController.xib */; };
+		A68F3EF825CC33FD00A611CF /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EF725CC33FD00A611CF /* NewsViewController.swift */; };
+		A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */; };
+		A68F3F0225CC344600A611CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3F0125CC344600A611CF /* SettingsViewController.swift */; };
+		A68F3F0D25CC3A2300A611CF /* NewsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		A68F3EB725CBF38700A611CF /* Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aggregator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EBA25CBF38700A611CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A68F3EBE25CBF38700A611CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A68F3EC125CBF38700A611CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A68F3EC325CBF38800A611CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68F3EC625CBF38800A611CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		A68F3EDE25CBF38900A611CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68F3EF025CBFAD100A611CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A68F3EF125CBFAD100A611CF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A68F3EF725CC33FD00A611CF /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A68F3F0125CC344600A611CF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +109,16 @@
 		A68F3EB925CBF38700A611CF /* Aggregator */ = {
 			isa = PBXGroup;
 			children = (
+				A68F3F1125CC3A4F00A611CF /* Login */,
+				A68F3F0B25CC3A0C00A611CF /* News */,
 				A68F3EBA25CBF38700A611CF /* AppDelegate.swift */,
 				A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */,
-				A68F3EBE25CBF38700A611CF /* ViewController.swift */,
 				A68F3EC025CBF38700A611CF /* Main.storyboard */,
 				A68F3EC325CBF38800A611CF /* Assets.xcassets */,
 				A68F3EC525CBF38800A611CF /* LaunchScreen.storyboard */,
 				A68F3EC825CBF38800A611CF /* Info.plist */,
-				A68F3EF025CBFAD100A611CF /* LoginViewController.swift */,
-				A68F3EF125CBFAD100A611CF /* LoginViewController.xib */,
+				A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */,
+				A68F3F0125CC344600A611CF /* SettingsViewController.swift */,
 			);
 			path = Aggregator;
 			sourceTree = "<group>";
@@ -132,6 +139,24 @@
 				A68F3EDE25CBF38900A611CF /* Info.plist */,
 			);
 			path = AggregatorUITests;
+			sourceTree = "<group>";
+		};
+		A68F3F0B25CC3A0C00A611CF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A68F3EF725CC33FD00A611CF /* NewsViewController.swift */,
+				A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A68F3F1125CC3A4F00A611CF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A68F3EF025CBFAD100A611CF /* LoginViewController.swift */,
+				A68F3EF125CBFAD100A611CF /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68F3EF325CBFAD100A611CF /* LoginViewController.xib in Resources */,
+				A68F3F0D25CC3A2300A611CF /* NewsCollectionCell.xib in Resources */,
 				A68F3EC725CBF38800A611CF /* LaunchScreen.storyboard in Resources */,
 				A68F3EC425CBF38800A611CF /* Assets.xcassets in Resources */,
 				A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */,
@@ -265,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */,
 				A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */,
-				A68F3EBF25CBF38700A611CF /* ViewController.swift in Sources */,
+				A68F3F0225CC344600A611CF /* SettingsViewController.swift in Sources */,
 				A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */,
+				A68F3EF825CC33FD00A611CF /* NewsViewController.swift in Sources */,
 				A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
