@@ -15,6 +15,8 @@
 		A68F3EC725CBF38800A611CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC525CBF38800A611CF /* LaunchScreen.storyboard */; };
 		A68F3ED225CBF38900A611CF /* AggregatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3ED125CBF38900A611CF /* AggregatorTests.swift */; };
 		A68F3EDD25CBF38900A611CF /* AggregatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EDC25CBF38900A611CF /* AggregatorUITests.swift */; };
+		A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EF025CBFAD100A611CF /* LoginViewController.swift */; };
+		A68F3EF325CBFAD100A611CF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EF125CBFAD100A611CF /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A68F3ED825CBF38900A611CF /* AggregatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AggregatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EDC25CBF38900A611CF /* AggregatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatorUITests.swift; sourceTree = "<group>"; };
 		A68F3EDE25CBF38900A611CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68F3EF025CBFAD100A611CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A68F3EF125CBFAD100A611CF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				A68F3EC325CBF38800A611CF /* Assets.xcassets */,
 				A68F3EC525CBF38800A611CF /* LaunchScreen.storyboard */,
 				A68F3EC825CBF38800A611CF /* Info.plist */,
+				A68F3EF025CBFAD100A611CF /* LoginViewController.swift */,
+				A68F3EF125CBFAD100A611CF /* LoginViewController.xib */,
 			);
 			path = Aggregator;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F3EF325CBFAD100A611CF /* LoginViewController.xib in Resources */,
 				A68F3EC725CBF38800A611CF /* LaunchScreen.storyboard in Resources */,
 				A68F3EC425CBF38800A611CF /* Assets.xcassets in Resources */,
 				A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */,
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */,
 				A68F3EBF25CBF38700A611CF /* ViewController.swift in Sources */,
 				A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */,
 				A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */,
@@ -439,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LT66343UC;
 				INFOPLIST_FILE = Aggregator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LT66343UC;
 				INFOPLIST_FILE = Aggregator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
