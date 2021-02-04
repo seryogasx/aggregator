@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C971DF35396FC8C2881DDF /* libPods-Aggregator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */; };
+		289C5D03AA3429EDFEDD578B /* libPods-Aggregator-AggregatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */; };
 		A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBA25CBF38700A611CF /* AppDelegate.swift */; };
 		A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */; };
 		A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC025CBF38700A611CF /* Main.storyboard */; };
@@ -20,6 +22,7 @@
 		A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */; };
 		A68F3F0225CC344600A611CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3F0125CC344600A611CF /* SettingsViewController.swift */; };
 		A68F3F0D25CC3A2300A611CF /* NewsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */; };
+		FB8D905E3DE23A18A4F8DB04 /* libPods-AggregatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0C6B19D18CA5A1BA317090 /* Pods-AggregatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregatorTests.release.xcconfig"; path = "Target Support Files/Pods-AggregatorTests/Pods-AggregatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C46D61C00ED1CF06E6C9E0A /* Pods-Aggregator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator.release.xcconfig"; path = "Target Support Files/Pods-Aggregator/Pods-Aggregator.release.xcconfig"; sourceTree = "<group>"; };
+		55BF40FACCDAFC0C18EB6001 /* Pods-Aggregator-AggregatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator-AggregatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E37F6FD65DD79337DEC29CC /* Pods-Aggregator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator.debug.xcconfig"; path = "Target Support Files/Pods-Aggregator/Pods-Aggregator.debug.xcconfig"; sourceTree = "<group>"; };
+		9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aggregator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EB725CBF38700A611CF /* Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aggregator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EBA25CBF38700A611CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +68,9 @@
 		A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		A68F3F0125CC344600A611CF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionCell.xib; sourceTree = "<group>"; };
+		ACCBB927877A6C5E1DC6D691 /* Pods-Aggregator-AggregatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator-AggregatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aggregator-AggregatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCD2758C24B0370AEDA2931 /* Pods-AggregatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregatorTests.debug.xcconfig"; path = "Target Support Files/Pods-AggregatorTests/Pods-AggregatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C971DF35396FC8C2881DDF /* libPods-Aggregator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8D905E3DE23A18A4F8DB04 /* libPods-AggregatorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289C5D03AA3429EDFEDD578B /* libPods-Aggregator-AggregatorUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,8 @@
 				A68F3ED025CBF38900A611CF /* AggregatorTests */,
 				A68F3EDB25CBF38900A611CF /* AggregatorUITests */,
 				A68F3EB825CBF38700A611CF /* Products */,
+				D2C2B5B0BFAA77DD074353A4 /* Pods */,
+				EFA86DB1A0295C7E1A179FD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +126,8 @@
 		A68F3EB925CBF38700A611CF /* Aggregator */ = {
 			isa = PBXGroup;
 			children = (
+				A6FE7DFF25CC3C2800021621 /* Settings */,
+				A6FE7DFE25CC3C0E00021621 /* Messages */,
 				A68F3F1125CC3A4F00A611CF /* Login */,
 				A68F3F0B25CC3A0C00A611CF /* News */,
 				A68F3EBA25CBF38700A611CF /* AppDelegate.swift */,
@@ -117,8 +136,6 @@
 				A68F3EC325CBF38800A611CF /* Assets.xcassets */,
 				A68F3EC525CBF38800A611CF /* LaunchScreen.storyboard */,
 				A68F3EC825CBF38800A611CF /* Info.plist */,
-				A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */,
-				A68F3F0125CC344600A611CF /* SettingsViewController.swift */,
 			);
 			path = Aggregator;
 			sourceTree = "<group>";
@@ -159,6 +176,46 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A6FE7DFE25CC3C0E00021621 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		A6FE7DFF25CC3C2800021621 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A68F3F0125CC344600A611CF /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D2C2B5B0BFAA77DD074353A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E37F6FD65DD79337DEC29CC /* Pods-Aggregator.debug.xcconfig */,
+				4C46D61C00ED1CF06E6C9E0A /* Pods-Aggregator.release.xcconfig */,
+				ACCBB927877A6C5E1DC6D691 /* Pods-Aggregator-AggregatorUITests.debug.xcconfig */,
+				55BF40FACCDAFC0C18EB6001 /* Pods-Aggregator-AggregatorUITests.release.xcconfig */,
+				CCCD2758C24B0370AEDA2931 /* Pods-AggregatorTests.debug.xcconfig */,
+				1F0C6B19D18CA5A1BA317090 /* Pods-AggregatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFA86DB1A0295C7E1A179FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */,
+				AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */,
+				13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A68F3EE125CBF38900A611CF /* Build configuration list for PBXNativeTarget "Aggregator" */;
 			buildPhases = (
+				72EC46202897C19AA345BE34 /* [CP] Check Pods Manifest.lock */,
 				A68F3EB325CBF38700A611CF /* Sources */,
 				A68F3EB425CBF38700A611CF /* Frameworks */,
 				A68F3EB525CBF38700A611CF /* Resources */,
+				05BD1F7410362EFC4016DCDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A68F3EE425CBF38900A611CF /* Build configuration list for PBXNativeTarget "AggregatorTests" */;
 			buildPhases = (
+				77BE9D30AAEC3D677A66D0E8 /* [CP] Check Pods Manifest.lock */,
 				A68F3EC925CBF38900A611CF /* Sources */,
 				A68F3ECA25CBF38900A611CF /* Frameworks */,
 				A68F3ECB25CBF38900A611CF /* Resources */,
@@ -201,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A68F3EE725CBF38900A611CF /* Build configuration list for PBXNativeTarget "AggregatorUITests" */;
 			buildPhases = (
+				A034CDDAA94FFFE897A4FF4B /* [CP] Check Pods Manifest.lock */,
 				A68F3ED425CBF38900A611CF /* Sources */,
 				A68F3ED525CBF38900A611CF /* Frameworks */,
 				A68F3ED625CBF38900A611CF /* Resources */,
+				7F6E3F88538C3B2C6F236B83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +347,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05BD1F7410362EFC4016DCDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aggregator/Pods-Aggregator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aggregator/Pods-Aggregator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aggregator/Pods-Aggregator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72EC46202897C19AA345BE34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aggregator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77BE9D30AAEC3D677A66D0E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AggregatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F6E3F88538C3B2C6F236B83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A034CDDAA94FFFE897A4FF4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aggregator-AggregatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A68F3EB325CBF38700A611CF /* Sources */ = {
@@ -469,6 +634,7 @@
 		};
 		A68F3EE225CBF38900A611CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E37F6FD65DD79337DEC29CC /* Pods-Aggregator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +655,7 @@
 		};
 		A68F3EE325CBF38900A611CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C46D61C00ED1CF06E6C9E0A /* Pods-Aggregator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,6 +676,7 @@
 		};
 		A68F3EE525CBF38900A611CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCCD2758C24B0370AEDA2931 /* Pods-AggregatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +699,7 @@
 		};
 		A68F3EE625CBF38900A611CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0C6B19D18CA5A1BA317090 /* Pods-AggregatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +722,7 @@
 		};
 		A68F3EE825CBF38900A611CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCBB927877A6C5E1DC6D691 /* Pods-Aggregator-AggregatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +743,7 @@
 		};
 		A68F3EE925CBF38900A611CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BF40FACCDAFC0C18EB6001 /* Pods-Aggregator-AggregatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
