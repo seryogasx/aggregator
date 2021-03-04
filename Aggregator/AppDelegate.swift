@@ -1,18 +1,38 @@
-//
-//  AppDelegate.swift
-//  Aggregator
-//
-//  Created by Сергей Петров on 04.02.2021.
-//
-
 import UIKit
+import VK_ios_sdk
+
+let vkPermissions = ["friends", "email"]
+let instPermissions = ["feed", "email"]
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        VKSdk.wakeUpSession(vkPermissions) { [weak self] (state, error) in
+            if state == VKAuthorizationState.authorized {
+                self?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            } else {
+                self?.window?.rootViewController = LoginViewController()
+            }
+        }
+        window?.makeKeyAndVisible()
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        VKSdk.processOpen(url, fromApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String)
+        print("url: \(url)")
+        return true
+    }
+
+    private func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        VKSdk.processOpen(url as URL?, fromApplication: sourceApplication)
+        print("url: \(url)")
         return true
     }
 
@@ -35,3 +55,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+//extension AppDelegate: VKSdkDelegate {
+//    func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
+//        print(#function)
+//        print("access: ", result)
+//    }
+//
+//    func vkSdkUserAuthorizationFailed() {
+//        print(#function)
+//    }
+//}

@@ -1,26 +1,21 @@
-//
-//  NewsViewController.swift
-//  Aggregator
-//
-//  Created by Сергей Петров on 04.02.2021.
-//
-
 import UIKit
 
-class NewsViewController: UIViewController/*, UICollectionViewDataSource, UICollectionViewDelegate*/ {
+class NewsViewController: UIViewController {
+    
+    let data = [
+        UIColor.green
+    ]
+    
+    let cellID = "NewsTableCellID"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("News init")
+        tableViewSetup()
     }
     
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let collectionCell = UICollectionReusableView()
-//
-//        return collectionCell
-//    }
+    func tableViewSetup() {
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
+//        collectionView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellWithReuseIdentifier: cellID)
+    }
 }

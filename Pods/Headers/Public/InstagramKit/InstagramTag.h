@@ -1,1 +1,0 @@
-../../../InstagramKit/InstagramKit/Classes/Models/InstagramTag.h

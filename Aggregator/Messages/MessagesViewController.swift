@@ -1,10 +1,3 @@
-//
-//  MessagesViewController.swift
-//  Aggregator
-//
-//  Created by Сергей Петров on 04.02.2021.
-//
-
 import UIKit
 
 class MessagesViewController: UIViewController {

@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03C971DF35396FC8C2881DDF /* libPods-Aggregator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */; };
-		289C5D03AA3429EDFEDD578B /* libPods-Aggregator-AggregatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */; };
+		27EA30D34864942873DD5466 /* Pods_Aggregator_AggregatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E609D5AB5DB765E67F30DC19 /* Pods_Aggregator_AggregatorUITests.framework */; };
+		6B94C99241529A9CB6EF66C4 /* Pods_AggregatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAD4A9470CC36101EE95AE8 /* Pods_AggregatorTests.framework */; };
+		A62FBE3725EFE26500CC3DAD /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FBE3625EFE26500CC3DAD /* KeychainStorage.swift */; };
+		A63CC63425CD92C600AA8CF0 /* VkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CC63325CD92C600AA8CF0 /* VkViewController.swift */; };
+		A64F4E5A25E93E3D00C8923D /* VkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64F4E5925E93E3D00C8923D /* VkDelegate.swift */; };
 		A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBA25CBF38700A611CF /* AppDelegate.swift */; };
 		A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */; };
 		A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC025CBF38700A611CF /* Main.storyboard */; };
@@ -21,8 +24,10 @@
 		A68F3EF825CC33FD00A611CF /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EF725CC33FD00A611CF /* NewsViewController.swift */; };
 		A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */; };
 		A68F3F0225CC344600A611CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3F0125CC344600A611CF /* SettingsViewController.swift */; };
-		A68F3F0D25CC3A2300A611CF /* NewsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */; };
-		FB8D905E3DE23A18A4F8DB04 /* libPods-AggregatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */; };
+		A69706AC25CD58AF00EC4650 /* VkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69706AB25CD58AF00EC4650 /* VkModel.swift */; };
+		A6F3D7BF25CC44E500EB30DE /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F3D7BD25CC44E500EB30DE /* NewsCollectionViewCell.swift */; };
+		A6F3D7C025CC44E500EB30DE /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F3D7BE25CC44E500EB30DE /* NewsCollectionViewCell.xib */; };
+		DBB2E216B3FA0C761E576610 /* Pods_Aggregator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4443FEE894CA8F19C8082E41 /* Pods_Aggregator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0C6B19D18CA5A1BA317090 /* Pods-AggregatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregatorTests.release.xcconfig"; path = "Target Support Files/Pods-AggregatorTests/Pods-AggregatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		4443FEE894CA8F19C8082E41 /* Pods_Aggregator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aggregator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46D61C00ED1CF06E6C9E0A /* Pods-Aggregator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator.release.xcconfig"; path = "Target Support Files/Pods-Aggregator/Pods-Aggregator.release.xcconfig"; sourceTree = "<group>"; };
 		55BF40FACCDAFC0C18EB6001 /* Pods-Aggregator-AggregatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator-AggregatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E37F6FD65DD79337DEC29CC /* Pods-Aggregator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator.debug.xcconfig"; path = "Target Support Files/Pods-Aggregator/Pods-Aggregator.debug.xcconfig"; sourceTree = "<group>"; };
-		9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aggregator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62FBE3625EFE26500CC3DAD /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		A63CC63325CD92C600AA8CF0 /* VkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkViewController.swift; sourceTree = "<group>"; };
+		A64F4E5925E93E3D00C8923D /* VkDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkDelegate.swift; sourceTree = "<group>"; };
 		A68F3EB725CBF38700A611CF /* Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aggregator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EBA25CBF38700A611CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +74,14 @@
 		A68F3EF725CC33FD00A611CF /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		A68F3EFC25CC342E00A611CF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		A68F3F0125CC344600A611CF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionCell.xib; sourceTree = "<group>"; };
+		A69706AB25CD58AF00EC4650 /* VkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkModel.swift; sourceTree = "<group>"; };
+		A69706B325CD5DBF00EC4650 /* libVK-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libVK-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F3D7BD25CC44E500EB30DE /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6F3D7BE25CC44E500EB30DE /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		ACCBB927877A6C5E1DC6D691 /* Pods-Aggregator-AggregatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator-AggregatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aggregator-AggregatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAD4A9470CC36101EE95AE8 /* Pods_AggregatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggregatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCD2758C24B0370AEDA2931 /* Pods-AggregatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregatorTests.debug.xcconfig"; path = "Target Support Files/Pods-AggregatorTests/Pods-AggregatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E609D5AB5DB765E67F30DC19 /* Pods_Aggregator_AggregatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aggregator_AggregatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C971DF35396FC8C2881DDF /* libPods-Aggregator.a in Frameworks */,
+				DBB2E216B3FA0C761E576610 /* Pods_Aggregator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8D905E3DE23A18A4F8DB04 /* libPods-AggregatorTests.a in Frameworks */,
+				6B94C99241529A9CB6EF66C4 /* Pods_AggregatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289C5D03AA3429EDFEDD578B /* libPods-Aggregator-AggregatorUITests.a in Frameworks */,
+				27EA30D34864942873DD5466 /* Pods_Aggregator_AggregatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +137,7 @@
 		A68F3EB925CBF38700A611CF /* Aggregator */ = {
 			isa = PBXGroup;
 			children = (
+				A69706A925CD589900EC4650 /* Model */,
 				A6FE7DFF25CC3C2800021621 /* Settings */,
 				A6FE7DFE25CC3C0E00021621 /* Messages */,
 				A68F3F1125CC3A4F00A611CF /* Login */,
@@ -162,7 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				A68F3EF725CC33FD00A611CF /* NewsViewController.swift */,
-				A68F3F0C25CC3A2300A611CF /* NewsCollectionCell.xib */,
+				A6F3D7BD25CC44E500EB30DE /* NewsCollectionViewCell.swift */,
+				A6F3D7BE25CC44E500EB30DE /* NewsCollectionViewCell.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -174,6 +187,25 @@
 				A68F3EF125CBFAD100A611CF /* LoginViewController.xib */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A69706A925CD589900EC4650 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A69706AA25CD58A100EC4650 /* Vk */,
+				A62FBE3625EFE26500CC3DAD /* KeychainStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A69706AA25CD58A100EC4650 /* Vk */ = {
+			isa = PBXGroup;
+			children = (
+				A69706AB25CD58AF00EC4650 /* VkModel.swift */,
+				A63CC63325CD92C600AA8CF0 /* VkViewController.swift */,
+				A64F4E5925E93E3D00C8923D /* VkDelegate.swift */,
+			);
+			path = Vk;
 			sourceTree = "<group>";
 		};
 		A6FE7DFE25CC3C0E00021621 /* Messages */ = {
@@ -202,16 +234,16 @@
 				CCCD2758C24B0370AEDA2931 /* Pods-AggregatorTests.debug.xcconfig */,
 				1F0C6B19D18CA5A1BA317090 /* Pods-AggregatorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		EFA86DB1A0295C7E1A179FD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A3DA5EA51FE84A41ED68D2E /* libPods-Aggregator.a */,
-				AE7D7F7D586A8DA2D0BB680B /* libPods-Aggregator-AggregatorUITests.a */,
-				13E917FC3DF5A18E9320AF37 /* libPods-AggregatorTests.a */,
+				A69706B325CD5DBF00EC4650 /* libVK-ios-sdk.a */,
+				4443FEE894CA8F19C8082E41 /* Pods_Aggregator.framework */,
+				E609D5AB5DB765E67F30DC19 /* Pods_Aggregator_AggregatorUITests.framework */,
+				BFAD4A9470CC36101EE95AE8 /* Pods_AggregatorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,9 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68F3EF325CBFAD100A611CF /* LoginViewController.xib in Resources */,
-				A68F3F0D25CC3A2300A611CF /* NewsCollectionCell.xib in Resources */,
 				A68F3EC725CBF38800A611CF /* LaunchScreen.storyboard in Resources */,
 				A68F3EC425CBF38800A611CF /* Assets.xcassets in Resources */,
+				A6F3D7C025CC44E500EB30DE /* NewsCollectionViewCell.xib in Resources */,
 				A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,9 +489,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */,
+				A6F3D7BF25CC44E500EB30DE /* NewsCollectionViewCell.swift in Sources */,
+				A63CC63425CD92C600AA8CF0 /* VkViewController.swift in Sources */,
+				A69706AC25CD58AF00EC4650 /* VkModel.swift in Sources */,
 				A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */,
+				A64F4E5A25E93E3D00C8923D /* VkDelegate.swift in Sources */,
 				A68F3F0225CC344600A611CF /* SettingsViewController.swift in Sources */,
 				A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */,
+				A62FBE3725EFE26500CC3DAD /* KeychainStorage.swift in Sources */,
 				A68F3EF825CC33FD00A611CF /* NewsViewController.swift in Sources */,
 				A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */,
 			);

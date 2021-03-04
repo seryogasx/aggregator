@@ -1,29 +1,30 @@
-//
-//  SceneDelegate.swift
-//  Aggregator
-//
-//  Created by Сергей Петров on 04.02.2021.
-//
-
 import UIKit
+import VK_ios_sdk
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let scope = ["friends", "email"]
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let loginScreenViwController = LoginViewController()
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = loginScreenViwController
+        VKSdk.initialize(withAppId: "vk7751834")
+        VKSdk.wakeUpSession(scope) { [weak self](state, error) in
+            if state == VKAuthorizationState.authorized {
+                self?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            } else {
+                print("Try later (scene)!", state.rawValue)
+                self?.window?.rootViewController = LoginViewController()
+            }
+        }
         window?.makeKeyAndVisible()
+        print("Scene delegate")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -57,3 +58,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+@available(iOS 13.0, *)
+extension SceneDelegate: VKSdkUIDelegate {
+    func vkSdkShouldPresent(_ controller: UIViewController!) {
+        print(#function)
+//        if (controller != nil) {
+//            controller.dismiss(animated: true, completion: {
+//                self.present(controller, animated: true, completion: {
+//                })
+//            })
+//        } else {
+//            self.present(controller, animated: true, completion: {
+//            })
+//        }
+    }
+    
+    func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
+        print(#function)
+    }
+    
+    
+}

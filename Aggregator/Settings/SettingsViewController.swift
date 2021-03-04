@@ -1,10 +1,3 @@
-//
-//  SettingsViewController.swift
-//  Aggregator
-//
-//  Created by Сергей Петров on 04.02.2021.
-//
-
 import UIKit
 
 class SettingsViewController: UIViewController {
@@ -15,7 +8,7 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
