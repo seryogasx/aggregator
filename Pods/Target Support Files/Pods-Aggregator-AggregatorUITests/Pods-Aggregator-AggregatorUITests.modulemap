@@ -1,0 +1,6 @@
+framework module Pods_Aggregator_AggregatorUITests {
+  umbrella header "Pods-Aggregator-AggregatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
