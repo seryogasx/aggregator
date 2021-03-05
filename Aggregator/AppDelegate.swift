@@ -77,15 +77,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         VKSdk.forceLogout()
     }
 }
-
-
-//extension AppDelegate: VKSdkDelegate {
-//    func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
-//        print(#function)
-//        print("access: ", result)
-//    }
-//
-//    func vkSdkUserAuthorizationFailed() {
-//        print(#function)
-//    }
-//}

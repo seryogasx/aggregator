@@ -10,8 +10,9 @@
 		27EA30D34864942873DD5466 /* Pods_Aggregator_AggregatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E609D5AB5DB765E67F30DC19 /* Pods_Aggregator_AggregatorUITests.framework */; };
 		6B94C99241529A9CB6EF66C4 /* Pods_AggregatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAD4A9470CC36101EE95AE8 /* Pods_AggregatorTests.framework */; };
 		A62FBE3725EFE26500CC3DAD /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FBE3625EFE26500CC3DAD /* KeychainStorage.swift */; };
-		A63CC63425CD92C600AA8CF0 /* VkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CC63325CD92C600AA8CF0 /* VkViewController.swift */; };
+		A63CC63425CD92C600AA8CF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CC63325CD92C600AA8CF0 /* MainViewController.swift */; };
 		A64F4E5A25E93E3D00C8923D /* VkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64F4E5925E93E3D00C8923D /* VkDelegate.swift */; };
+		A681B1B425F0F49400C15AC8 /* VkModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A681B1B225F0F49400C15AC8 /* VkModel.xcdatamodeld */; };
 		A68F3EBB25CBF38700A611CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBA25CBF38700A611CF /* AppDelegate.swift */; };
 		A68F3EBD25CBF38700A611CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */; };
 		A68F3EC225CBF38700A611CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F3EC025CBF38700A611CF /* Main.storyboard */; };
@@ -54,8 +55,9 @@
 		55BF40FACCDAFC0C18EB6001 /* Pods-Aggregator-AggregatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator-AggregatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Aggregator-AggregatorUITests/Pods-Aggregator-AggregatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E37F6FD65DD79337DEC29CC /* Pods-Aggregator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aggregator.debug.xcconfig"; path = "Target Support Files/Pods-Aggregator/Pods-Aggregator.debug.xcconfig"; sourceTree = "<group>"; };
 		A62FBE3625EFE26500CC3DAD /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
-		A63CC63325CD92C600AA8CF0 /* VkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkViewController.swift; sourceTree = "<group>"; };
+		A63CC63325CD92C600AA8CF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A64F4E5925E93E3D00C8923D /* VkDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkDelegate.swift; sourceTree = "<group>"; };
+		A681B1B325F0F49400C15AC8 /* VkModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VkModel.xcdatamodel; sourceTree = "<group>"; };
 		A68F3EB725CBF38700A611CF /* Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aggregator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68F3EBA25CBF38700A611CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68F3EBC25CBF38700A611CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		A68F3EB925CBF38700A611CF /* Aggregator */ = {
 			isa = PBXGroup;
 			children = (
+				A63CC63325CD92C600AA8CF0 /* MainViewController.swift */,
 				A69706A925CD589900EC4650 /* Model */,
 				A6FE7DFF25CC3C2800021621 /* Settings */,
 				A6FE7DFE25CC3C0E00021621 /* Messages */,
@@ -202,8 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				A69706AB25CD58AF00EC4650 /* VkModel.swift */,
-				A63CC63325CD92C600AA8CF0 /* VkViewController.swift */,
 				A64F4E5925E93E3D00C8923D /* VkDelegate.swift */,
+				A681B1B225F0F49400C15AC8 /* VkModel.xcdatamodeld */,
 			);
 			path = Vk;
 			sourceTree = "<group>";
@@ -490,7 +493,8 @@
 			files = (
 				A68F3EFD25CC342E00A611CF /* MessagesViewController.swift in Sources */,
 				A6F3D7BF25CC44E500EB30DE /* NewsCollectionViewCell.swift in Sources */,
-				A63CC63425CD92C600AA8CF0 /* VkViewController.swift in Sources */,
+				A681B1B425F0F49400C15AC8 /* VkModel.xcdatamodeld in Sources */,
+				A63CC63425CD92C600AA8CF0 /* MainViewController.swift in Sources */,
 				A69706AC25CD58AF00EC4650 /* VkModel.swift in Sources */,
 				A68F3EF225CBFAD100A611CF /* LoginViewController.swift in Sources */,
 				A64F4E5A25E93E3D00C8923D /* VkDelegate.swift in Sources */,
@@ -839,6 +843,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A681B1B225F0F49400C15AC8 /* VkModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A681B1B325F0F49400C15AC8 /* VkModel.xcdatamodel */,
+			);
+			currentVersion = A681B1B325F0F49400C15AC8 /* VkModel.xcdatamodel */;
+			path = VkModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A68F3EAF25CBF38700A611CF /* Project object */;
 }

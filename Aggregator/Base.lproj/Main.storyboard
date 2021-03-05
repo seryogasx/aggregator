@@ -12,7 +12,6 @@
         <!--News View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="NewsViewController" customModule="Aggregator" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -22,6 +21,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jG0-Kx-cch"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1275" y="1690"/>
         </scene>
@@ -48,7 +48,6 @@
         <!--Settings View Controller-->
         <scene sceneID="zkc-AT-g5y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aHV-G4-Svr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="xIs-IE-LX9" customClass="SettingsViewController" customModule="Aggregator" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UaY-Qx-gl6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -58,13 +57,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="mGI-OZ-w7p"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHV-G4-Svr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="1690"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="L5d-DO-sAK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="acB-7J-xF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="34z-dM-qFI" customClass="MessagesViewController" customModule="Aggregator" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gm4-9E-yXV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -74,15 +73,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lqw-FQ-mbB"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acB-7J-xF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146" y="1690"/>
         </scene>
         <!--Лента-->
         <scene sceneID="ZK7-If-H0I">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QHH-xK-5Sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PML-mN-1aS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Лента" selectedImage="tabBarItem:wzl-lB-Tpa:selectedImage" catalog="system" id="wzl-lB-Tpa"/>
+                    <tabBarItem key="tabBarItem" title="Лента" selectedImage="tabBarItem:wzl-lB-Tpa:selectedImage" id="wzl-lB-Tpa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bPT-qS-OFl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -93,15 +92,15 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sId-MY-a5O"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHH-xK-5Sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1275.3623188405797" y="914.73214285714278"/>
         </scene>
         <!--Сообщения-->
         <scene sceneID="9EU-Sh-B4w">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgZ-hf-CLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owa-o0-ARq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Сообщения" selectedImage="tabBarItem:G6z-um-cac:selectedImage" catalog="system" id="G6z-um-cac"/>
+                    <tabBarItem key="tabBarItem" title="Сообщения" selectedImage="tabBarItem:G6z-um-cac:selectedImage" id="G6z-um-cac"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vl6-Cz-0yl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -112,15 +111,15 @@
                         <segue destination="34z-dM-qFI" kind="relationship" relationship="rootViewController" id="vID-Ps-7Sv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgZ-hf-CLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="914.73214285714278"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="qL8-8T-bsM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fOv-bd-jT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZNA-Es-MhP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Настройки" selectedImage="tabBarItem:TDw-s2-7de:selectedImage" catalog="system" id="TDw-s2-7de"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" selectedImage="tabBarItem:TDw-s2-7de:selectedImage" id="TDw-s2-7de"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SWV-kk-m7L">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -131,12 +130,13 @@
                         <segue destination="xIs-IE-LX9" kind="relationship" relationship="rootViewController" id="bPN-XG-pmp"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOv-bd-jT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="914.73214285714278"/>
         </scene>
     </scenes>
     <resources>
-        <image name="tabBarItem:G6z-um-cac:selectedImage" catalog="system" width="128" height="113">
+        <image name="tabBarItem:G6z-um-cac:selectedImage" width="128" height="113">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKywzNjlDS0xQU1UkbnVsbNcNDg8QERITFBUW
@@ -15718,7 +15718,7 @@ L44ADi+QAA4vmQAOL54ADi+kAA4vrAAOL64ADi+wAA4vsgAOL7QADkFUAA5BWQAOQWYADkFpAA5BdgAO
 QXsADkGDAA5BhgAOQYsADkGTAAAAAAAABAEAAAAAAAAAVgAAAAAAAAAAAAAAAAAOQZY
 </mutableData>
         </image>
-        <image name="tabBarItem:TDw-s2-7de:selectedImage" catalog="system" width="128" height="37">
+        <image name="tabBarItem:TDw-s2-7de:selectedImage" width="128" height="37">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKywzNjlDS0xQU1UkbnVsbNcNDg8QERITFBUW
@@ -20923,7 +20923,7 @@ dQAEr3sABK+DAASvhQAEr4cABK+JAASviwAEwSsABMEwAATBPQAEwUAABMFNAATBUgAEwVoABMFdAATB
 YgAEwWoAAAAAAAAEAQAAAAAAAABWAAAAAAAAAAAAAAAAAATBbQ
 </mutableData>
         </image>
-        <image name="tabBarItem:wzl-lB-Tpa:selectedImage" catalog="system" width="128" height="106">
+        <image name="tabBarItem:wzl-lB-Tpa:selectedImage" width="128" height="106">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKywzNjlDS0xQU1UkbnVsbNcNDg8QERITFBUW

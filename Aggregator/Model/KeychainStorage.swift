@@ -21,12 +21,7 @@ public class KeychainStorage {
         case deleteError(String)
     }
     
-//    static var shared = KeychainStorage()
     private static let service = "AggregatorService"
-    
-    private init() {
-        
-    }
     
     static func exists(_ key: String) throws -> Bool {
         let status = SecItemCopyMatching([
@@ -57,7 +52,6 @@ public class KeychainStorage {
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
             kSecAttrService: service,
-            // Allow background access:
             kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock,
             kSecValueData: value,
             ] as NSDictionary, nil)

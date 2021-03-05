@@ -57,26 +57,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-
-
-@available(iOS 13.0, *)
-extension SceneDelegate: VKSdkUIDelegate {
-    func vkSdkShouldPresent(_ controller: UIViewController!) {
-        print(#function)
-//        if (controller != nil) {
-//            controller.dismiss(animated: true, completion: {
-//                self.present(controller, animated: true, completion: {
-//                })
-//            })
-//        } else {
-//            self.present(controller, animated: true, completion: {
-//            })
-//        }
-    }
-    
-    func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
-        print(#function)
-    }
-    
-    
-}

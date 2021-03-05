@@ -10,12 +10,5 @@ class NewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewSetup()
-    }
-    
-    func tableViewSetup() {
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
-//        collectionView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellWithReuseIdentifier: cellID)
     }
 }
