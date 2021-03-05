@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        VkSdk = VKSdk.initialize(withAppId: ProcessInfo.processInfo.environment["VK_APP_ID"])
+        VkSdk = VKSdk.initialize(withAppId: (UserDefaults.standard.value(forKey: "some_init_value") as! String))
         print("LoginViewController start")
     }
     
@@ -26,12 +26,12 @@ class LoginViewController: UIViewController {
         print("Auth passed!")
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == toMainSegueIdentifier {
-            let mainVC = MainViewController()
-            present(mainVC, animated: true, completion: nil)
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == toMainSegueIdentifier {
+//            let mainVC = MainViewController()
+//            present(mainVC, animated: true, completion: nil)
+//        }
+//    }
     
     override func viewDidAppear(_ animated: Bool) {
         print("Did appear")
@@ -47,10 +47,18 @@ extension LoginViewController: VKSdkDelegate {
         
         do {
             try KeychainStorage.set(value: token.accessToken.data(using: .utf8)!, forKey: "vkToken")
+            let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+            mainVC.modalPresentationStyle = .fullScreen
+            present(mainVC, animated: true, completion: nil)
+//            mainVC.presentingViewController?.dismiss(animated: false, completion: nil)
         } catch let error as KeychainStorage.KeychainError {
             print(error)
         } catch {
             print("Unknown error by set value into keychain!")
+            let alert = UIAlertController(title: "Unknown error by set value into keychain!", message: "wtf?", preferredStyle: .actionSheet)
+            let alertAction = UIAlertAction(title: "EMMM..ok", style: .default, handler: nil)
+            alert.addAction(alertAction)
+            present(alert, animated: true, completion: nil)
         }
         
 //        do {
@@ -65,8 +73,40 @@ extension LoginViewController: VKSdkDelegate {
     }
     
     func vkSdkUserAuthorizationFailed() {
-        print("ERROR!", #function)
+        print(#function)
     }
+//
+//    func vkSdkDidDismiss(_ controller: UIViewController!) {
+//        print(#function)
+//    }
+//
+//    func vkSdkWillDismiss(_ controller: UIViewController!) {
+//        print(#function)
+//    }
+//
+//    func vkSdkAuthorizationStateUpdated(with result: VKAuthorizationResult!) {
+//        print(#function)
+//    }
+//
+//    func vkSdkTokenHasExpired(_ expiredToken: VKAccessToken!) {
+//        print(#function)
+//    }
+//
+//    func vkSdkAccessTokenUpdated(_ newToken: VKAccessToken!, oldToken: VKAccessToken!) {
+//        print(#function)
+//    }
+//
+//    override func vks_presentThroughDelegate() {
+//        print(#function)
+//    }
+//
+//    override func vks_viewControllerDidDismiss() {
+//        print(#function)
+//    }
+//
+//    override func vks_viewControllerWillDismiss() {
+//        print(#function)
+//    }
     
 }
 

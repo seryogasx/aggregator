@@ -31,8 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserDefaults.standard.setValue("7751834", forKey: "some_init_value")
         window = UIWindow(frame: UIScreen.main.bounds)
-        VKSdk.initialize(withAppId: ProcessInfo.processInfo.environment["VK_APP_ID"])
+        VKSdk.initialize(withAppId: (UserDefaults.standard.value(forKey: "some_init_value") as! String))
         VKSdk.wakeUpSession(vkPermissions) { [weak self] (state, error) in
             if state == VKAuthorizationState.authorized {
                 self?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()

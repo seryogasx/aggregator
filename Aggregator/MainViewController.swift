@@ -14,7 +14,7 @@ class MainViewController: UIViewController, VKSdkDelegate, VKSdkUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let sdkInstance = VKSdk.initialize(withAppId: ProcessInfo.processInfo.environment["VK_APP_ID"]) else {
+        guard let sdkInstance = VKSdk.initialize(withAppId: (UserDefaults.standard.value(forKey: "some_init_value") as! String)) else {
             print("Init SDK error!")
             return
         }
