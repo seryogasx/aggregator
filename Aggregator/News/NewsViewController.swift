@@ -7,8 +7,11 @@ class NewsViewController: UIViewController {
     ]
     
     let cellID = "NewsTableCellID"
+    let vkNews = VkRecordList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        VkRecordList
+        
     }
 }

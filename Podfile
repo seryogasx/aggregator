@@ -5,10 +5,9 @@ target 'Aggregator' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks! :linkage => :static
 
-  pod 'InstagramKit'
-  pod 'VK-ios-sdk'
-
   # Pods for Aggregator
+
+  pod 'VK-ios-sdk'
 
   target 'AggregatorTests' do
     inherit! :search_paths

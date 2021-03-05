@@ -1,7 +1,7 @@
 import Foundation
 import VK_ios_sdk
 
-struct Record: Codable {
+struct VkRecord: Codable {
     let author: String
     let publishedTime: Date
     let tag: String?
@@ -13,6 +13,15 @@ struct Record: Codable {
     let viewCounter: Int
 }
 
-struct RecordList {
-    var list: [Record]
+class VkRecordList {
+    private var list: [VkRecord] = []
+    
+    public func append(_ newRecord: VkRecord) {
+        self.list.append(newRecord)
+    }
+    
+    subscript(_ index: Int) -> VkRecord {
+        guard index < list.count else { fatalError("VkRecordList out of range!") }
+        return list[index]
+    }
 }

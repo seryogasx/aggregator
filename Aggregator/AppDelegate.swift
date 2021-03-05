@@ -2,7 +2,7 @@ import UIKit
 import VK_ios_sdk
 import CoreData
 
-let vkPermissions = ["friends", "email"]
+let vkPermissions = ["notify", "notifications", "friends", "status", "wall", "stories"]
 let instPermissions = ["feed", "email"]
 
 
