@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        VKSdk.initialize(withAppId: "vk7751834")
+        VKSdk.initialize(withAppId: ProcessInfo.processInfo.environment["VK_APP_ID"])
         VKSdk.wakeUpSession(scope) { [weak self](state, error) in
             if state == VKAuthorizationState.authorized {
                 self?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()

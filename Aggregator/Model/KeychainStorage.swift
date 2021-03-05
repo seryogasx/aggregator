@@ -6,43 +6,105 @@
 //
 
 import Foundation
-import CryptoKit
+//import CryptoKit
+import Security
 import VK_ios_sdk
 
 public class KeychainStorage {
     
-    static var shared = KeychainStorage()
-    let vkTokenTag = "com.aggregator.keys.vktoken".data(using: .utf8)!
+    enum KeychainError: Error {
+        case addKeyError(String)
+        case getKeyError(String)
+        case dataError(String)
+        case existsError(String)
+        case updateError(String)
+        case deleteError(String)
+    }
+    
+//    static var shared = KeychainStorage()
+    private static let service = "AggregatorService"
     
     private init() {
         
     }
     
-    public func getVKAccessToken() -> SecKey? {
-        let getquery: [String: Any] = [kSecClass as String: kSecClassKey,
-                                       kSecAttrApplicationTag as String: vkTokenTag,
-                                       kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
-                                       kSecReturnRef as String: true
-        ]
-        var item: CFTypeRef?
-        let status = SecItemCopyMatching(getquery as CFDictionary, &item)
-        guard status == errSecSuccess else {
-            print("Error! can't getVKAccessToken")
-            return nil
+    static func exists(_ key: String) throws -> Bool {
+        let status = SecItemCopyMatching([
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key,
+            kSecAttrService: service,
+            kSecReturnData: false,
+            ] as NSDictionary, nil)
+        if status == errSecSuccess {
+            return true
+        } else if status == errSecItemNotFound {
+            return false
+        } else {
+            throw KeychainError.existsError("Somethig goes wrong by exists check!")
         }
-        return Optional(item as! SecKey)
     }
     
-    public func setVKAccessToken(_ token: VKAccessToken) -> Bool {
-        let addTokenQuery: [String: Any] = [kSecClass as String: kSecClassKey,
-                                            kSecAttrApplicationTag as String: vkTokenTag,
-                                            kSecValueRef as String: token
-        ]
-        let status = SecItemAdd(addTokenQuery as CFDictionary, nil)
-        guard status == errSecSuccess else {
-            print("Error! can't setVKAccessToken")
-            return false
+    static func set(value: Data, forKey key: String) throws {
+        if try exists(key) {
+            try update(value: value, forKey: key)
+        } else {
+            try add(value: value, forKey: key)
         }
-        return true
+    }
+    
+    private static func add(value: Data, forKey key: String) throws {
+        let status = SecItemAdd([
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key,
+            kSecAttrService: service,
+            // Allow background access:
+            kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock,
+            kSecValueData: value,
+            ] as NSDictionary, nil)
+        guard status == errSecSuccess else { throw KeychainError.addKeyError("Error to add value, status != errSecSuccess!") }
+    }
+    
+    private static func update(value: Data, forKey key: String) throws {
+        let status = SecItemUpdate([
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key,
+            kSecAttrService: service,
+            ] as NSDictionary, [
+            kSecValueData: value,
+            ] as NSDictionary)
+        guard status == errSecSuccess else { throw KeychainError.updateError("Error to update value, status != errSecSuccess!") }
+    }
+    
+    static func delete(_ key: String) throws {
+        let status = SecItemDelete([
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key,
+            kSecAttrService: service,
+            ] as NSDictionary)
+        guard status == errSecSuccess else { throw KeychainError.deleteError("Error to delete value, status != errSecSuccess!") }
+    }
+    
+    static func get(_ key: String) throws -> Data? {
+        var result: AnyObject?
+        let status = SecItemCopyMatching([
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key,
+            kSecAttrService: service,
+            kSecReturnData: true,
+            ] as NSDictionary, &result)
+        if status == errSecSuccess {
+            return result as? Data
+        } else if status == errSecItemNotFound {
+            return nil
+        } else {
+            throw KeychainError.getKeyError("Error to get value!")
+        }
+    }
+    
+    static func deleteAll() throws {
+        let status = SecItemDelete([
+            kSecClass: kSecClassGenericPassword,
+            ] as NSDictionary)
+        guard status == errSecSuccess else { throw KeychainError.dataError("Error to deleteAll values, status != errSecSuccess!") }
     }
 }

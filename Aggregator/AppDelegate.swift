@@ -1,5 +1,6 @@
 import UIKit
 import VK_ios_sdk
+import CoreData
 
 let vkPermissions = ["friends", "email"]
 let instPermissions = ["feed", "email"]
@@ -10,9 +11,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "VkModel")
+        container.loadPersistentStores { _, error in
+            if let error = error { fatalError("Fail to loadPersistentStores") }
+        }
+        return container
+    }()
+    
+    var mainContext: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
+    
+    var context: NSManagedObjectContext? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
+        let context = appDelegate.mainContext
+        return context
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
+        VKSdk.initialize(withAppId: ProcessInfo.processInfo.environment["VK_APP_ID"])
         VKSdk.wakeUpSession(vkPermissions) { [weak self] (state, error) in
             if state == VKAuthorizationState.authorized {
                 self?.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
@@ -51,8 +71,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        VKSdk.forceLogout()
+    }
 }
 
 

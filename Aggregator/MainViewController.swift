@@ -8,9 +8,8 @@
 import UIKit
 import VK_ios_sdk
 
-class VkViewController: UIViewController, VKSdkDelegate, VKSdkUIDelegate {
+class MainViewController: UIViewController, VKSdkDelegate, VKSdkUIDelegate {
     
-    let scope = ["email", "photos", "wall", "offline"]
     var sdkInstance: VKSdk?
     
     override func viewDidLoad() {
@@ -24,14 +23,14 @@ class VkViewController: UIViewController, VKSdkDelegate, VKSdkUIDelegate {
     }
     
     public func checkSDK() {
-        VKSdk.wakeUpSession(scope, complete: {
+        VKSdk.wakeUpSession(vkPermissions, complete: {
             (state: VKAuthorizationState, error: Error?) -> Void in
             
             if state == .authorized {
                 print("already auth")
             }
             else {
-                VKSdk.authorize(self.scope)
+                VKSdk.authorize(vkPermissions)
             }
             return
         })
