@@ -8,5 +8,5 @@
 import Foundation
 
 struct VkMarket: Codable {
-    
+//    let id
 }

@@ -8,5 +8,12 @@
 import Foundation
 
 struct VkAlbum: Codable {
-    
+    let id: Int
+    let thumb: VkPhoto
+    let owner_id: Int
+    let title: String
+    let description: String
+    let created: Int
+    let updated: Int
+    let size: Int
 }
