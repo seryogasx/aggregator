@@ -23,17 +23,6 @@ struct VkProduct: Codable {
     let price: VkPrice
 }
 
-struct VkPrice: Codable {
-    let amount: Int
-    let currency: VkCurrency
-    let text: String
-}
-
-struct VkCurrency: Codable {
-    let id: Int
-    let name: String
-}
-
 struct VkButton: Codable {
     let title: String
     let action: VkButtonAction
