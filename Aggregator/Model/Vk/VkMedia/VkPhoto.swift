@@ -60,3 +60,9 @@ struct VkPhotoSizes: Codable {
     let height: Int
     let type: String
 }
+
+struct VkStickerPhoto: Codable {
+    let url: String
+    let width: Int
+    let height: Int
+}
