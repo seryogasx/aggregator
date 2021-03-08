@@ -8,5 +8,16 @@
 import Foundation
 
 struct VkAudio: Codable {
-    let type: String
+    let id: Int
+    let owner_id: Int
+    let artist: String
+    let title: String
+    let duration: Int
+    let url: String
+    let lyrics_id: Int
+    let album_id: Int
+    let genre_id: Int
+    let date: Int
+    let no_search: Int
+    let is_hq: Int
 }
