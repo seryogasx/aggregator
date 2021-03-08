@@ -21,3 +21,10 @@ struct VkAudio: Codable {
     let no_search: Int
     let is_hq: Int
 }
+
+struct VkAudioMessage: Codable {
+    let duration: Int
+    let waveform: [Int]
+    let ling_ogg: String?
+    let link_mp3: String?
+}

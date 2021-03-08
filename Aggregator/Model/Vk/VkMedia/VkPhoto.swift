@@ -53,3 +53,10 @@ struct VkPhoto_Tag: Codable {
     var src: URL?
     var src_big: URL?
 }
+
+struct VkPhotoSizes: Codable {
+    let src: String
+    let width: Int
+    let height: Int
+    let type: String
+}
