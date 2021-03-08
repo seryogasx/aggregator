@@ -7,4 +7,9 @@
 
 import Foundation
 
-
+struct VkApp: Codable {
+    let id: Int
+    let name: String
+    let photo_130: String
+    let photo_604: String
+}
