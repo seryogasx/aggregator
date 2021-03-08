@@ -1,21 +1,5 @@
 import Foundation
 
-struct Photo: Codable {
-    var id: Int?
-    var owner_id: Int?
-    var album_id: Int?
-    var src: URL?
-    var src_big: URL?
-}
-
-struct Photo_Tag: Codable {
-    var id: Int?
-    var owner_id: Int?
-    var album_id: Int?
-    var src: URL?
-    var src_big: URL?
-}
-
 struct Note: Codable {
     var id: Int?
     var owner_id: Int?
@@ -67,16 +51,6 @@ struct Repost: Codable {
     var user_reposted: Int?
 }
 
-// Need to add atachment!
-
-//protocol Attachment: Codable {
-//    var type: String { get set }
-//}
-//
-//struct Photo: Attachment {
-//    var photo:
-//}
-
 struct VkItem: Codable {
     var type: String?
     var source_id: Int?
@@ -96,9 +70,9 @@ struct VkItem: Codable {
     var reposts: Repost?
 //    var attachments: [Attachment]?
     var geo: Int?
-    var photos: Photo?
-    var photo_tags: Photo_Tag?
-    var notes: Note?
+    var photos: VkPhoto?
+    var photo_tags: VkPhoto_Tag?
+    var notes: VkNote?
     var friends: Int?
 }
 

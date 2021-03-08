@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Codable {
+struct VkUser: Codable {
     let id: Int
     let first_name: String
     let last_name: String
@@ -26,16 +26,16 @@ struct User: Codable {
     let can_see_audio: Int?
     let can_send_friend_request: Int?
     let can_write_private_message: Int?
-    let career: Career?
-    let city: City?
+    let career: VkCareer?
+    let city: VkCity?
     let common_count: Int?
     let connections: [String: String]?
-    let contacts: Contact?
-    let counters: Counter?
-    let coutry: Country?
-    let crop_photo: CropPhoto?
+    let contacts: VkContact?
+    let counters: VkCounter?
+    let coutry: VkCountry?
+    let crop_photo: VkCropPhoto?
     let domain: String?
-    let education: Education?
+    let education: VkEducation?
     let exports: String?
     let first_name_non: String?
     let first_name_gen: String?
@@ -59,16 +59,16 @@ struct User: Codable {
     let last_name_acc: String?
     let last_name_ins: String?
     let last_name_abl: String?
-    let last_seen: LastSeen?
+    let last_seen: VkLastSeen?
     let lists: String?
     let maiden_name: String?
-    let military: Military?
+    let military: VkMilitary?
     let movies: String?
     let music: String?
     let nickname: String?
-    let occupation: Occupation?
+    let occupation: VkOccupation?
     let online: Int?
-    let personal: Personal?
+    let personal: VkPersonal?
     let photo_50: String?
     let photo_100: String?
     let photo_200_orig: String?
@@ -78,23 +78,23 @@ struct User: Codable {
     let photo_max: String?
     let photo_max_orig: String?
     let quotes: String?
-    let relatives: Relative?
+    let relatives: VkRelative?
     let relation: Int?
-    let schools: School?
+    let schools: VkSchool?
     let screen_name: String?
     let sex: Int?
     let site: String?
     let status: String
-    let status_audio: Audio?
+    let status_audio: VkAudio?
     let timezone: Int?
     let trending: Int?
     let tv: String?
-    let universities: [University]?
+    let universities: [VkUniversity]?
     let verified: Int?
     let wall_default: String?
 }
 
-struct Career: Codable {
+struct VkCareer: Codable {
     let group_id: Int?
     let company: String?
     let country_id: Int
@@ -105,17 +105,17 @@ struct Career: Codable {
     let position: String
 }
 
-struct City: Codable {
+struct VkCity: Codable {
     let id: Int?
     let title: String
 }
 
-struct Contact: Codable {
+struct VkContact: Codable {
     let mobile_phone: String?
     let home_phone: String?
 }
 
-struct Counter: Codable {
+struct VkCounter: Codable {
     let albums: Int
     let videos: Int
     let audios: Int
@@ -130,14 +130,12 @@ struct Counter: Codable {
     let pages: Int
 }
 
-struct Country: Codable {
+struct VkCountry: Codable {
     let id: Int?
     let title: String
 }
 
-
-
-struct Education: Codable {
+struct VkEducation: Codable {
     let university: Int
     let university_name: String
     let faculty: Int
@@ -145,14 +143,14 @@ struct Education: Codable {
     let graduation: Int
 }
 
-struct LastSeen: Codable {
+struct VkLastSeen: Codable {
     let time: Int
     let platform: Int
 }
 
 
 
-struct Military: Codable {
+struct VkMilitary: Codable {
     let unit: String
     let unit_id: Int
     let country_id: Int
@@ -160,13 +158,13 @@ struct Military: Codable {
     let until: Int
 }
 
-struct Occupation: Codable {
+struct VkOccupation: Codable {
     let type: String
     let id: Int
     let name: String
 }
 
-struct Personal: Codable {
+struct VkPersonal: Codable {
     let political: Int
     let langs: [String]
     let religion: String
@@ -177,13 +175,13 @@ struct Personal: Codable {
     let alcohol: Int
 }
 
-struct Relative: Codable {
+struct VkRelative: Codable {
     let id: Int
     let name: String
     let type: String
 }
 
-struct School: Codable {
+struct VkSchool: Codable {
     let id: Int
     let country: Int
     let city: Int
@@ -197,9 +195,7 @@ struct School: Codable {
     let type_str: String?
 }
 
-
-
-struct University: Codable {
+struct VkUniversity: Codable {
     let id: Int
     let country: Int
     let city: Int
