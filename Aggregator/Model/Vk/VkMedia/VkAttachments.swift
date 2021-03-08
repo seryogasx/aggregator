@@ -41,6 +41,8 @@ struct VkDocAttachment: Codable, VkAttachment {
 
 struct VkGraffitiAttachment: Codable, VkAttachment { // 2013 or early
     var type = "graffiti"
+    let graffiti: VkGraffiti?
+    let photo: VkPhoto?
     let id: Int
     let owner_id: Int
     let photo_130: String
@@ -51,6 +53,3 @@ struct VkLinkAttachment: Codable, VkAttachment { // 2013 or early
     var type = "graffiti"
     let link: VkLink
 }
-
-
-
